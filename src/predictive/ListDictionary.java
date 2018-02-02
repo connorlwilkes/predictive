@@ -1,19 +1,114 @@
 package predictive;
 
-import java.util.ArrayList;
-import java.util.Set;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 public class ListDictionary implements Dictionary {
 
     private ArrayList<WordSig> wordsAndSignatures;
+    private ArrayList<String> signatures;
 
     public ListDictionary(String path) {
 
+        wordsAndSignatures = new ArrayList<>();
+        signatures = new ArrayList<>();
+
+        readFromFileAndAddToList(path);
+        sortAndRemoveDuplicates();
+        createSignaturesList();
+
+    }
+
+    private void readFromFileAndAddToList(String path) {
+
+        try {
+            File file = new File(path);
+            Scanner in = new Scanner(file);
+
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                if (isValidWord(line) && !(wordsAndSignatures.contains(line))) {
+                    WordSig toAdd = new WordSig(line, wordToSignature(line));
+                    wordsAndSignatures.add(toAdd);
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println("File not found");
+        }
+    }
+
+    private void sortAndRemoveDuplicates() {
+
+        wordsAndSignatures.sort(WordSig::compareTo);
+
+        for (int i = 1; i < wordsAndSignatures.size(); i++) {
+
+            if (wordsAndSignatures.get(i).getWord().equals(wordsAndSignatures.get(i - 1).getWord())) {
+                wordsAndSignatures.remove(i - 1);
+            }
+        }
+    }
+
+    private void createSignaturesList() {
+
+        for (WordSig ws : wordsAndSignatures) {
+            signatures.add(ws.getSignature());
+        }
+    }
+
+    public ArrayList<WordSig> getWordsAndSignatures() {
+        return wordsAndSignatures;
+    }
+
+    public ArrayList<String> getSignatures() {
+        return signatures;
+    }
+
+    public void setWordsAndSignatures(ArrayList<WordSig> wordsAndSignatures) {
+        this.wordsAndSignatures = wordsAndSignatures;
+    }
+
+
+    @Override
+    public String toString() {
+
+        StringBuffer toReturn = new StringBuffer();
+
+        for (WordSig ws : wordsAndSignatures) {
+            toReturn.append(ws.toString());
+        }
+
+        return toReturn.toString();
     }
 
     @Override
     public Set<String> signatureToWords(String signature) {
-        return null;
+
+        boolean isPresent = true;
+        Set<String> potentialWords = new HashSet<>();
+
+        int index = Collections.binarySearch(signatures, signature);
+
+        for (int i = index; i < signatures.size(); i++) {
+
+            if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
+                System.out.println(wordsAndSignatures.get(i).getWord());
+                potentialWords.add(wordsAndSignatures.get(i).getWord());
+            }
+        }
+
+        for (int i = index; 0 < i; i--) {
+
+            if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
+                System.out.println(wordsAndSignatures.get(i).getWord());
+                potentialWords.add(wordsAndSignatures.get(i).getWord());
+            }
+        }
+
+        return potentialWords;
     }
 
     /**
@@ -41,7 +136,7 @@ public class ListDictionary implements Dictionary {
      * @param charToConvert char to convert to keypad number
      * @return the number on the keypad associated with that particular char
      */
-    private static char charToInt(char charToConvert) {
+    public static char charToInt(char charToConvert) {
 
         int unicode = (int) charToConvert;
 
@@ -64,5 +159,10 @@ public class ListDictionary implements Dictionary {
         } else {
             return ' ';
         }
+    }
+
+    public static boolean isValidWord(String wordToCheck) {
+
+        return wordToCheck.matches("[a-zA-Z]+");
     }
 }

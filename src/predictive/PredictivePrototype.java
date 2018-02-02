@@ -77,7 +77,7 @@ public class PredictivePrototype {
             while (in.hasNextLine()) {
 
                 String line = in.nextLine();
-                if (checkWord(line, signature)) {
+                if (checkWord(line, signature) && !(potentialWords.contains(line))) {
 
                     potentialWords.add(line.toLowerCase());
                 }
