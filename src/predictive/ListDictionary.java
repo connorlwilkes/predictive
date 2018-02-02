@@ -9,6 +9,11 @@ public class ListDictionary implements Dictionary {
     private ArrayList<WordSig> wordsAndSignatures;
     private ArrayList<String> signatures;
 
+    /**
+     * Constructor for the ListDictionary class
+     *
+     * @param path the path to the dictionary file
+     */
     public ListDictionary(String path) {
 
         wordsAndSignatures = new ArrayList<>();
@@ -20,6 +25,11 @@ public class ListDictionary implements Dictionary {
 
     }
 
+    /**
+     * Reads from a file and enters information into an ArrayList
+     *
+     * @param path the path to the file
+     */
     private void readFromFileAndAddToList(String path) {
 
         try {
@@ -40,6 +50,9 @@ public class ListDictionary implements Dictionary {
         }
     }
 
+    /**
+     * Sorts and removes duplicates in an array
+     */
     private void sortAndRemoveDuplicates() {
 
         wordsAndSignatures.sort(WordSig::compareTo);
@@ -52,6 +65,9 @@ public class ListDictionary implements Dictionary {
         }
     }
 
+    /**
+     * Method to create a signatures list from the wordsAndSignatures ArrayList
+     */
     private void createSignaturesList() {
 
         for (WordSig ws : wordsAndSignatures) {
@@ -59,19 +75,39 @@ public class ListDictionary implements Dictionary {
         }
     }
 
+    /**
+     * Getter for the wordsAndSignatures ArrayList
+     *
+     * @return the wordsAndSignatures ArrayList
+     */
     public ArrayList<WordSig> getWordsAndSignatures() {
         return wordsAndSignatures;
     }
 
+    /**
+     * Getter for the signatures ArrayList
+     *
+     * @return the signatures ArrayList
+     */
     public ArrayList<String> getSignatures() {
         return signatures;
     }
 
+    /**
+     * Setter for the wordAndSignatures ArrayList
+     *
+     * @param wordsAndSignatures the new array
+     */
     public void setWordsAndSignatures(ArrayList<WordSig> wordsAndSignatures) {
         this.wordsAndSignatures = wordsAndSignatures;
     }
 
 
+    /**
+     * toString method for the ListDictionary class
+     *
+     * @return string of the ListDictionary class
+     */
     @Override
     public String toString() {
 
@@ -84,10 +120,15 @@ public class ListDictionary implements Dictionary {
         return toReturn.toString();
     }
 
+    /**
+     * Method finds from a dictionary words that match a mobile keypad signature
+     *
+     * @param signature the keypad signature to check
+     * @return a set of the potential words that signature could equal
+     */
     @Override
     public Set<String> signatureToWords(String signature) {
 
-        boolean isPresent = true;
         Set<String> potentialWords = new HashSet<>();
 
         int index = Collections.binarySearch(signatures, signature);
@@ -95,7 +136,6 @@ public class ListDictionary implements Dictionary {
         for (int i = index; i < signatures.size(); i++) {
 
             if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
-                System.out.println(wordsAndSignatures.get(i).getWord());
                 potentialWords.add(wordsAndSignatures.get(i).getWord());
             }
         }
@@ -103,7 +143,6 @@ public class ListDictionary implements Dictionary {
         for (int i = index; 0 < i; i--) {
 
             if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
-                System.out.println(wordsAndSignatures.get(i).getWord());
                 potentialWords.add(wordsAndSignatures.get(i).getWord());
             }
         }
@@ -161,6 +200,12 @@ public class ListDictionary implements Dictionary {
         }
     }
 
+    /**
+     * Checks if a word is valid
+     *
+     * @param wordToCheck the word to check
+     * @return true if valid, false if otherwise
+     */
     public static boolean isValidWord(String wordToCheck) {
 
         return wordToCheck.matches("[a-zA-Z]+");

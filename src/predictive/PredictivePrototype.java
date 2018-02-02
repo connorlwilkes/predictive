@@ -92,7 +92,13 @@ public class PredictivePrototype {
 
     }
 
-
+    /**
+     * Checks if a word is valid and matches a signature
+     *
+     * @param wordToCheck word to check
+     * @param signature signature to compare it to
+     * @return true if the word is valid and matches and false if otherwise
+     */
     public static boolean checkWord(String wordToCheck, String signature) {
 
         String wordSignature = wordToSignature(wordToCheck);
@@ -100,6 +106,12 @@ public class PredictivePrototype {
 
     }
 
+    /**
+     * Checks if a word is valid
+     *
+     * @param wordToCheck the word to check
+     * @return true if valid, false if otherwise
+     */
     public static boolean isValidWord(String wordToCheck) {
 
         return wordToCheck.matches("[a-zA-Z]+");
