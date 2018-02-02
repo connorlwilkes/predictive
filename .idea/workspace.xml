@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ce270f-aef2-4794-af2e-c6e2eea5506b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/predictive/ListDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/ListDictionary.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" afterPath="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/WordSig.java" afterPath="$PROJECT_DIR$/src/predictive/WordSig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/WS23/predictive/ListDictionary.class" afterPath="$PROJECT_DIR$/out/production/WS23/predictive/ListDictionary.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/WS23/predictive/PredictivePrototype.class" afterPath="$PROJECT_DIR$/out/production/WS23/predictive/PredictivePrototype.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/WS23/predictive/WordSig.class" afterPath="$PROJECT_DIR$/out/production/WS23/predictive/WordSig.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +18,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PredictivePrototype.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PredictivePrototype.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" column="75" lean-forward="false" selection-start-line="99" selection-start-column="75" selection-end-line="99" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-8">
+              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sigs2WordsList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -31,7 +41,7 @@
       <file leaf-file-name="ListDictionary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/ListDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
+            <state relative-caret-position="845">
               <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="207" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,8 +117,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -135,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/predictive/ListDictionary.java" />
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
         <option value="$PROJECT_DIR$/src/predictive/WordSig.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
       </list>
     </option>
   </component>
@@ -226,13 +237,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ListDictionaryTest.Test1">
+  <component name="RunManager" selected="Application.Sigs2WordsList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="Sigs2WordsList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="predictive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="predictive.Sigs2WordsList" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="4663 329" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="WS23" />
+      <envs />
     </configuration>
     <configuration name="Sigs2WordsProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -336,31 +366,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PredictivePrototypeTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="predictive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="WS23" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="predictive" />
-      <option name="MAIN_CLASS_NAME" value="predictive.PredictivePrototypeTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -424,17 +429,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Sigs2WordsProto" />
       <item index="1" class="java.lang.String" itemvalue="Application.Words2SigProto" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PredictivePrototypeTest.test6" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Sigs2WordsList" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PredictivePrototypeTest" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.ListDictionaryTest.Test1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ListDictionaryTest.Test1" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Sigs2WordsList" />
         <item index="1" class="java.lang.String" itemvalue="Application.Sigs2WordsProto" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Words2SigProto" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PredictivePrototypeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PredictivePrototypeTest.test6" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ListDictionaryTest.Test1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Words2SigProto" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PredictivePrototypeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +456,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517408725095</updated>
-      <workItem from="1517408726387" duration="18991000" />
+      <workItem from="1517408726387" duration="19378000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1517578669354</created>
@@ -496,7 +501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18991000" />
+    <option name="totallyTimeSpent" value="19378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -511,7 +516,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -635,9 +640,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/ListDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
+        <state relative-caret-position="845">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="207" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -651,29 +680,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Dictionary.java">
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/PredictivePrototype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="75" lean-forward="false" selection-start-line="99" selection-start-column="75" selection-end-line="99" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
