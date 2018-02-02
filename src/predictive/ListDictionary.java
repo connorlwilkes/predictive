@@ -1,12 +1,20 @@
 package predictive;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Set;
 
-public class PredictivePrototype {
+public class ListDictionary implements Dictionary {
+
+    private ArrayList<WordSig> wordsAndSignatures;
+
+    public ListDictionary(String path) {
+
+    }
+
+    @Override
+    public Set<String> signatureToWords(String signature) {
+        return null;
+    }
 
     /**
      * Takes a string and converts it to the keypad entry that would have been typed on a traditional mobile phone
@@ -57,52 +65,4 @@ public class PredictivePrototype {
             return ' ';
         }
     }
-
-    /**
-     * Takes a number signature akin to that from the numberpad mobile-phone texting
-     *
-     * @param signature
-     * @return
-     */
-    public static Set<String> signatureToWords(String signature) {
-
-        Set<String> potentialWords = new HashSet<>();
-
-        try {
-            String filename = "dictionary";
-
-            File file = new File(filename);
-            Scanner in = new Scanner(file);
-
-            while (in.hasNextLine()) {
-
-                String line = in.nextLine();
-                if (checkWord(line, signature)) {
-
-                    potentialWords.add(line.toLowerCase());
-                }
-            }
-
-        } catch (FileNotFoundException e) {
-
-            System.out.println("File not found");
-        }
-
-        return potentialWords;
-
-    }
-
-
-    public static boolean checkWord(String wordToCheck, String signature) {
-
-        String wordSignature = wordToSignature(wordToCheck);
-        return wordSignature.equals(signature) && isValidWord(wordToCheck);
-
-    }
-
-    public static boolean isValidWord(String wordToCheck) {
-
-        return wordToCheck.matches("[a-zA-Z]+");
-    }
-
 }
