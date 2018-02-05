@@ -71,7 +71,7 @@ public class WordSig implements Comparable<WordSig> {
     @Override
     public int compareTo(WordSig ws) {
 
-        if (!(this.signature.compareTo(ws.getSignature()) == 0)) {
+        if (this.signature.compareTo(ws.getSignature()) != 0) {
             return this.signature.compareTo(ws.getSignature());
         } else {
             return this.getWord().compareTo(ws.getWord());

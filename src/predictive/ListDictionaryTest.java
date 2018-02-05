@@ -2,6 +2,9 @@ package predictive;
 
 import org.junit.Test;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.Assert.*;
 
 public class ListDictionaryTest {
@@ -11,10 +14,47 @@ public class ListDictionaryTest {
 
         ListDictionary dictionary = new ListDictionary("dictionary");
 
-        System.out.println(dictionary);
+        Set<String> expected = new HashSet<>();
 
-        System.out.println(dictionary.signatureToWords("4663"));
+        expected.add("hood");
+        expected.add("good");
+        expected.add("hone");
+        expected.add("hoof");
+        expected.add("home");
+        expected.add("gone");
+
+        Set<String> actual = dictionary.signatureToWords("4663");
+
+        assertEquals(expected, actual);
+
 
     }
 
+    @Test
+    public void Test2() {
+
+        ListDictionary dictionary = new ListDictionary("dictionary");
+
+        Set<String> expected = new HashSet<>();
+
+        expected.add("car");
+
+        Set<String> actual = dictionary.signatureToWords("227");
+
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    public void Test3() {
+
+        ListDictionary dictionary = new ListDictionary("dictionary");
+
+        Set<String> expected = new HashSet<>();
+
+        Set<String> actual = dictionary.signatureToWords("123");
+        assertEquals(expected, actual);
+
+    }
 }

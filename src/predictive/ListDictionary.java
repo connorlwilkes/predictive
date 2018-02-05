@@ -39,7 +39,7 @@ public class ListDictionary implements Dictionary {
             while (in.hasNextLine()) {
                 String line = in.nextLine();
                 if (isValidWord(line) && !(wordsAndSignatures.contains(line))) {
-                    WordSig toAdd = new WordSig(line, wordToSignature(line));
+                    WordSig toAdd = new WordSig(line.toLowerCase(), wordToSignature(line));
                     wordsAndSignatures.add(toAdd);
                 }
             }
@@ -132,6 +132,10 @@ public class ListDictionary implements Dictionary {
         Set<String> potentialWords = new HashSet<>();
 
         int index = Collections.binarySearch(signatures, signature);
+
+        if (index < 0) {
+            return potentialWords;
+        }
 
         for (int i = index; i < signatures.size(); i++) {
 

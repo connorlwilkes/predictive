@@ -9,7 +9,9 @@ import java.util.Set;
 public class PredictivePrototype {
 
     /**
-     * Takes a string and converts it to the keypad entry that would have been typed on a traditional mobile phone
+     * Takes a string and converts it to the keypad entry that would have been typed on a traditional mobile phone. Uses
+     * StringBuffer because it is more efficient as unlike using concatenation each time a new String is added to the
+     * buffer there is not another variable added to the stack.
      *
      * @param word the word to convert
      * @return a string of the keys
@@ -96,7 +98,7 @@ public class PredictivePrototype {
      * Checks if a word is valid and matches a signature
      *
      * @param wordToCheck word to check
-     * @param signature signature to compare it to
+     * @param signature   signature to compare it to
      * @return true if the word is valid and matches and false if otherwise
      */
     public static boolean checkWord(String wordToCheck, String signature) {
