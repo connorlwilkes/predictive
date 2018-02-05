@@ -16,6 +16,7 @@ public class ListDictionaryTest {
 
         Set<String> expected = new HashSet<>();
 
+
         expected.add("hood");
         expected.add("good");
         expected.add("hone");
@@ -54,6 +55,19 @@ public class ListDictionaryTest {
         Set<String> expected = new HashSet<>();
 
         Set<String> actual = dictionary.signatureToWords("123");
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void Test4() {
+
+        ListDictionary dictionary = new ListDictionary("dictionary");
+
+        Set<String> expected = new HashSet<>();
+        expected.add("zebra");
+
+        Set<String> actual = dictionary.signatureToWords("93272");
         assertEquals(expected, actual);
 
     }

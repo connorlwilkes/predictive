@@ -7,7 +7,6 @@ import java.util.*;
 public class ListDictionary implements Dictionary {
 
     private ArrayList<WordSig> wordsAndSignatures;
-    private ArrayList<String> signatures;
 
     /**
      * Constructor for the ListDictionary class
@@ -17,11 +16,9 @@ public class ListDictionary implements Dictionary {
     public ListDictionary(String path) {
 
         wordsAndSignatures = new ArrayList<>();
-        signatures = new ArrayList<>();
 
         readFromFileAndAddToList(path);
         sortAndRemoveDuplicates();
-        createSignaturesList();
 
     }
 
@@ -66,31 +63,12 @@ public class ListDictionary implements Dictionary {
     }
 
     /**
-     * Method to create a signatures list from the wordsAndSignatures ArrayList
-     */
-    private void createSignaturesList() {
-
-        for (WordSig ws : wordsAndSignatures) {
-            signatures.add(ws.getSignature());
-        }
-    }
-
-    /**
      * Getter for the wordsAndSignatures ArrayList
      *
      * @return the wordsAndSignatures ArrayList
      */
     public ArrayList<WordSig> getWordsAndSignatures() {
         return wordsAndSignatures;
-    }
-
-    /**
-     * Getter for the signatures ArrayList
-     *
-     * @return the signatures ArrayList
-     */
-    public ArrayList<String> getSignatures() {
-        return signatures;
     }
 
     /**
@@ -131,24 +109,41 @@ public class ListDictionary implements Dictionary {
 
         Set<String> potentialWords = new HashSet<>();
 
-        int index = Collections.binarySearch(signatures, signature);
+        int index = Collections.binarySearch(wordsAndSignatures, new WordSig(null, signature), WordSig::compareToSearch);
 
         if (index < 0) {
             return potentialWords;
         }
 
-        for (int i = index; i < signatures.size(); i++) {
+        return addToSet(index, signature);
+    }
 
-            if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
-                potentialWords.add(wordsAndSignatures.get(i).getWord());
-            }
+    /**
+     * Adds to a number set a particular set of values starting at a specified index and working around that index.
+     * Assumes the list is sorted
+     *
+     * @param index the index to start at
+     * @param signature the signature to match
+     * @return a set with the correct values present
+     */
+    public Set<String> addToSet(int index, String signature) {
+
+        Set<String> potentialWords = new HashSet<>();
+
+        int i = index;
+
+        while (i < wordsAndSignatures.size() && wordsAndSignatures.get(i).getSignature().equals(signature)) {
+
+            potentialWords.add(wordsAndSignatures.get(i).getWord());
+            i++;
         }
 
-        for (int i = index; 0 < i; i--) {
+        i = (index - 1);
 
-            if (wordsAndSignatures.get(i).getSignature().equals(signature)) {
-                potentialWords.add(wordsAndSignatures.get(i).getWord());
-            }
+        while (i >= 0 && wordsAndSignatures.get(i).getSignature().equals(signature)) {
+
+            potentialWords.add(wordsAndSignatures.get(i).getWord());
+            i--;
         }
 
         return potentialWords;

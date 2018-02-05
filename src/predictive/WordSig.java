@@ -63,10 +63,10 @@ public class WordSig implements Comparable<WordSig> {
     }
 
     /**
-     * Compares two members of the WordSig class
+     * Compares two members of the WordSig class by their name and signature for sorting
      *
      * @param ws other WordSig to compare
-     * @return -1 if this WordSig is smaller, 0 if equal and 1 if this WordSig is greater
+     * @return negative if this WordSig is smaller, 0 if equal and positive if this WordSig is greater
      */
     @Override
     public int compareTo(WordSig ws) {
@@ -76,6 +76,19 @@ public class WordSig implements Comparable<WordSig> {
         } else {
             return this.getWord().compareTo(ws.getWord());
         }
+
+
+    }
+
+    /**
+     * Compares two members of the WordSig class by their signatures to search
+     *
+     * @param ws other WordSig to compare
+     * @return negative if this WordSig is smaller, 0 if equal and positive if this WordSig is greater
+     */
+    public int compareToSearch(WordSig ws) {
+
+        return this.signature.compareTo(ws.getSignature());
 
     }
 }
