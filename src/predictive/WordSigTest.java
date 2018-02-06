@@ -57,5 +57,5 @@ public class WordSigTest {
         assertEquals(expected, actual);
 
     }
-    
+
 }

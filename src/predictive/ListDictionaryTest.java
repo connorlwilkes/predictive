@@ -26,6 +26,7 @@ public class ListDictionaryTest {
 
         Set<String> actual = dictionary.signatureToWords("4663");
 
+
         assertEquals(expected, actual);
 
 
