@@ -24,6 +24,8 @@ public class ListDictionaryTest {
         expected.add("home");
         expected.add("gone");
 
+        System.out.println(dictionary);
+
         Set<String> actual = dictionary.signatureToWords("4663");
 
 
