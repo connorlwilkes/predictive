@@ -1,3 +1,11 @@
+/**
+ * A ListDictionary class that takes a file and stores words alongside their digit signatures in a list class.
+ * The class can then search for any particular signature input.
+ *
+ * @author Connor Wilkes
+ * @version 6/2/2018
+ */
+
 package predictive;
 
 import java.io.File;
@@ -150,5 +158,7 @@ public class ListDictionary implements Dictionary {
 
         return potentialWords;
     }
+
+
 
 }

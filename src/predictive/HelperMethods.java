@@ -1,3 +1,7 @@
+/**
+ * Helper static methods for the predictive class
+ */
+
 package predictive;
 
 public class HelperMethods {

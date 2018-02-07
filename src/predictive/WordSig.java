@@ -1,3 +1,10 @@
+/**
+ * A WordSig class that to help the ListDictionary class. Stores a word and a corresponding signature.
+ *
+ * @author Connor Wilkes
+ * @version 6/2/2018
+ */
+
 package predictive;
 
 public class WordSig implements Comparable<WordSig> {

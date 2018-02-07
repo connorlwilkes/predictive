@@ -1,3 +1,12 @@
+/**
+ * A PredictivePrototype class that reads from a file words and converts them to digit signatures allowing a user to
+ * search the file for a particular signature that matches a particular word.
+ *
+ * @author Connor Wilkes
+ * @version 6/2/2018
+ */
+
+
 package predictive;
 
 import java.io.File;
