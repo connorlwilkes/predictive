@@ -83,4 +83,14 @@ public class TreeNode {
         }
         return true;
     }
+
+    public boolean isChildEmpty(int index) {
+
+        if (this.children[index] == null) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }

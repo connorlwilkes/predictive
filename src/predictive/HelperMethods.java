@@ -1,5 +1,8 @@
 /**
  * Helper static methods for the predictive class
+ *
+ * @author Connor Wilkes
+ * @version 7/2/2018
  */
 
 package predictive;
