@@ -1,3 +1,10 @@
+/**
+ * TreeNode class to create a tree. Each node of the tree has children in the form of an array of other tree nodes. Each
+ * node has a list of words associated with it.
+ *
+ * @author Connor Wilkes
+ * @version 12/2/2018
+ */
 package predictive;
 
 import java.util.ArrayList;
@@ -8,41 +15,65 @@ public class TreeNode {
 
     private List<String> words = new ArrayList<>();
     private TreeNode[] children;
-    private int number;
 
+    /**
+     * Constructor for the TreeNode class
+     */
     public TreeNode() {
         this.children = new TreeNode[8];
 
     }
 
+    /**
+     * Getter for the words
+     *
+     * @return the list of words
+     */
     public List<String> getWords() {
         return words;
     }
 
+    /**
+     * Setter for the words
+     *
+     * @param words the list to change the words to
+     */
     public void setWords(List<String> words) {
         this.words = words;
     }
 
+    /**
+     * Getter for the children
+     *
+     * @return the children array
+     */
     public TreeNode[] getChildren() {
         return children;
     }
 
+    /**
+     * Setter for the children
+     *
+     * @param children the array to change the children to
+     */
     public void setChildren(TreeNode[] children) {
         this.children = children;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
+    /**
+     * Adds a word to the node's word list
+     *
+     * @param word word to add
+     */
     public void addWord(String word) {
         words.add(word);
     }
 
+    /**
+     * toString method of the TreeNode class
+     *
+     * @return string interpretation of the TreeNode
+     */
     @Override
     public String toString() {
 
@@ -60,6 +91,9 @@ public class TreeNode {
         return toReturn.toString();
     }
 
+    /**
+     * Adds children to the node
+     */
     public void addChildren() {
 
         for (int i = 0; i < children.length; i++) {
@@ -68,11 +102,11 @@ public class TreeNode {
         }
     }
 
-    public void addChild(int index, String word) {
-        children[index] = new TreeNode();
-        children[index].addWord(word);
-    }
-
+    /**
+     * Checks if the node's children are empty
+     *
+     * @return true if so, false otherwise
+     */
     public boolean isEmpty() {
 
         for (int i = 0; i < children.length; i++) {
@@ -82,15 +116,5 @@ public class TreeNode {
             }
         }
         return true;
-    }
-
-    public boolean isChildEmpty(int index) {
-
-        if (this.children[index] == null) {
-            return true;
-        } else {
-            return false;
-        }
-
     }
 }
