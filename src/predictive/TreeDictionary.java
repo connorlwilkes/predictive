@@ -17,7 +17,7 @@ import static predictive.HelperMethods.wordToSignature;
 
 public class TreeDictionary implements Dictionary {
 
-    TreeNode tree = new TreeNode();
+    private TreeNode tree = new TreeNode();
 
     /**
      * Constructor for the TreeDictionary class
@@ -106,7 +106,6 @@ public class TreeDictionary implements Dictionary {
         int sigLength = signature.length();
 
         for (int i = 0; i <= signature.length(); i++) {
-            int charsToCheck = signature.length() - i;
 
             for (int j = 0; j < counter; j++) {
 
@@ -176,12 +175,4 @@ public class TreeDictionary implements Dictionary {
 
     }
 
-    public static void main(String[] args) {
-
-        TreeDictionary dict = new TreeDictionary("ant");
-
-        Set<String> s = dict.signatureToWords("268");
-
-        System.out.println(s);
-    }
 }
