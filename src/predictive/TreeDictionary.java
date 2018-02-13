@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
+import static predictive.HelperMethods.trimList;
 import static predictive.HelperMethods.wordToSignature;
 
 public class TreeDictionary implements Dictionary {
@@ -96,10 +97,13 @@ public class TreeDictionary implements Dictionary {
     @Override
     public Set<String> signatureToWords(String signature) {
 
+
+
         List<String> list = new ArrayList();
         StringBuffer signatureToProcess = new StringBuffer();
 
         int counter = signature.length();
+        int sigLength = signature.length();
 
         for (int i = 0; i <= signature.length(); i++) {
             int charsToCheck = signature.length() - i;
@@ -117,6 +121,9 @@ public class TreeDictionary implements Dictionary {
 
 
         }
+
+
+        list = trimList(list, sigLength);
 
         return new HashSet<>(list);
 
@@ -166,5 +173,15 @@ public class TreeDictionary implements Dictionary {
             }
         }
         return toReturn.toString();
+
+    }
+
+    public static void main(String[] args) {
+
+        TreeDictionary dict = new TreeDictionary("ant");
+
+        Set<String> s = dict.signatureToWords("268");
+
+        System.out.println(s);
     }
 }

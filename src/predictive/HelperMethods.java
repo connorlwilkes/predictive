@@ -7,6 +7,9 @@
 
 package predictive;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelperMethods {
 
     /**
@@ -83,6 +86,33 @@ public class HelperMethods {
         } else {
             return ' ';
         }
+    }
+
+    /**
+     * Trims the Strings in a list to a particular length
+     *
+     * @param l               list to process
+     * @param sizeOfSignature size to trim to
+     * @return the list with the trimmed values
+     */
+    public static List<String> trimList(List<String> l, int sizeOfSignature) {
+
+        List<String> toReturn = new ArrayList<>();
+
+        for (int i = 0; i < l.size(); i++) {
+
+            if (l.get(i).length() > sizeOfSignature) {
+
+                toReturn.add(l.get(i).substring(0, sizeOfSignature));
+
+            } else if (l.get(i).length() == sizeOfSignature) {
+
+                toReturn.add(l.get(i));
+            }
+
+        }
+
+        return toReturn;
     }
 
 

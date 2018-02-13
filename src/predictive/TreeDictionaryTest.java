@@ -35,6 +35,7 @@ public class TreeDictionaryTest {
         expected.add("cat");
         expected.add("any");
 
+        System.out.println(actual);
 
         assertEquals(expected, actual);
 
