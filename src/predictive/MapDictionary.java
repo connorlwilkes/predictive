@@ -21,6 +21,7 @@ public class MapDictionary implements Dictionary {
 
     private void readFromFileAndAddToList(String path) {
 
+
         String signature;
 
         try {
