@@ -7,9 +7,9 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static predictive.PredictivePrototype.*;
+import static predictive.PredictivePrototype.signatureToWords;
+import static predictive.PredictivePrototype.wordToSignature;
 
 public class PredictivePrototypeTest {
 

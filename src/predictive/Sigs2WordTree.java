@@ -11,7 +11,7 @@ public class Sigs2WordTree {
 
     public static void main(String[] args) {
 
-        TreeDictionary dictionary = new TreeDictionary("dictionary");
+        TreeDictionary dictionary = new TreeDictionary("/usr/share/dict/words");
 
         for (String signature : args) {
 

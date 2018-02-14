@@ -12,7 +12,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-import static predictive.HelperMethods.*;
+import static predictive.HelperMethods.isValidWord;
+import static predictive.HelperMethods.wordToSignature;
 
 public class ListDictionary implements Dictionary {
 

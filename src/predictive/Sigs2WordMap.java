@@ -12,7 +12,7 @@ public class Sigs2WordMap {
 
     public static void main(String[] args) {
 
-        MapDictionary dictionary = new MapDictionary("dictionary");
+        MapDictionary dictionary = new MapDictionary("/usr/share/dict/words");
 
         for (String signature : args) {
 

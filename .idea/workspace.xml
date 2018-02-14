@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ce270f-aef2-4794-af2e-c6e2eea5506b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ignore.gitignore" afterPath="$PROJECT_DIR$/ignore.gitignore" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/ListDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/ListDictionary.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/ListDictionaryTest.java" afterPath="$PROJECT_DIR$/src/predictive/ListDictionaryTest.java" />
       <change beforePath="$PROJECT_DIR$/src/predictive/MapDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/MapDictionary.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/MapDictionaryTest.java" afterPath="$PROJECT_DIR$/src/predictive/MapDictionaryTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" afterPath="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/PredictivePrototypeTest.java" afterPath="$PROJECT_DIR$/src/predictive/PredictivePrototypeTest.java" />
       <change beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordMap.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordMap.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/TreeDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/TreeDictionary.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/TreeDictionaryTest.java" afterPath="$PROJECT_DIR$/src/predictive/TreeDictionaryTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/TreeNode.java" afterPath="$PROJECT_DIR$/src/predictive/TreeNode.java" />
+      <change beforePath="$PROJECT_DIR$/src/predictive/WordSigTest.java" afterPath="$PROJECT_DIR$/src/predictive/WordSigTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +49,20 @@
         <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ignore.gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ignore.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,26 +71,26 @@
         <entry file="file://$PROJECT_DIR$/src/predictive/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
-              <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+              <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#1399#1400#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapDictionary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapDictionary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/MapDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+              <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#2826#2827#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
+                <element signature="e#2892#2893#0" expanded="true" />
+                <element signature="e#2931#2932#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,9 +111,11 @@
       <file leaf-file-name="Sigs2WordMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,8 +123,20 @@
       <file leaf-file-name="Sigs2WordsList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sigs2WordsProto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -144,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototypeTests.java" />
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototypeTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/HelperFunctions.java" />
-        <option value="$PROJECT_DIR$/ignore.gitignore" />
         <option value="$PROJECT_DIR$/src/predictive/WordSigTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/WordSet.java" />
         <option value="$PROJECT_DIR$/src/predictive/Tree.java" />
@@ -156,18 +190,19 @@
         <option value="$PROJECT_DIR$/src/predictive/ListDictionary.java" />
         <option value="$PROJECT_DIR$/src/predictive/PredictivePrototype.java" />
         <option value="$PROJECT_DIR$/src/predictive/WordSig.java" />
-        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
         <option value="$PROJECT_DIR$/src/predictive/Words2SigProto.java" />
         <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java" />
         <option value="$PROJECT_DIR$/src/predictive/Dictionary.java" />
-        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" />
         <option value="$PROJECT_DIR$/src/predictive/MapDictionaryTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/TreeDictionaryTest.java" />
         <option value="$PROJECT_DIR$/src/predictive/HelperMethods.java" />
         <option value="$PROJECT_DIR$/src/predictive/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/predictive/TreeDictionary.java" />
-        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordMap.java" />
         <option value="$PROJECT_DIR$/src/predictive/MapDictionary.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordMap.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordsList.java" />
+        <option value="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" />
+        <option value="$PROJECT_DIR$/ignore.gitignore" />
       </list>
     </option>
   </component>
@@ -209,14 +244,7 @@
             </path>
             <path>
               <item name="WS2-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WS23" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WS2-3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WS23" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="predictive" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -506,7 +534,7 @@
       <workItem from="1518453435847" duration="3131000" />
       <workItem from="1518535932345" duration="65000" />
       <workItem from="1518536292239" duration="12000" />
-      <workItem from="1518549094077" duration="4437000" />
+      <workItem from="1518549094077" duration="4895000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1517578669354</created>
@@ -551,7 +579,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79997000" />
+    <option name="totallyTimeSpent" value="80455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -628,6 +656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,6 +664,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="116" lean-forward="false" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,8 +724,8 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="false" />
-            <element signature="e#2105#2106#0" expanded="false" />
-            <element signature="e#2146#2147#0" expanded="false" />
+            <element signature="e#2171#2172#0" expanded="false" />
+            <element signature="e#2212#2213#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,8 +777,8 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="false" />
-            <element signature="e#2105#2106#0" expanded="false" />
-            <element signature="e#2146#2147#0" expanded="false" />
+            <element signature="e#2171#2172#0" expanded="false" />
+            <element signature="e#2212#2213#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,13 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ignore.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/WordSet.java" />
     <entry file="file://$PROJECT_DIR$/words">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,6 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="116" lean-forward="false" selection-start-line="1" selection-start-column="116" selection-end-line="1" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/predictive/Words2SigProto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -925,7 +944,7 @@
         <state relative-caret-position="193">
           <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -949,40 +968,12 @@
     <entry file="file://$PROJECT_DIR$/src/predictive/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,12 +1002,60 @@
     <entry file="file://$PROJECT_DIR$/src/predictive/MapDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="103" column="42" lean-forward="false" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#2826#2827#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#2931#2932#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/predictive/Sigs2WordTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ignore.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

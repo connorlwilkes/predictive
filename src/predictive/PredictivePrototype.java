@@ -15,7 +15,8 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-import static predictive.HelperMethods.*;
+import static predictive.HelperMethods.charToInt;
+import static predictive.HelperMethods.checkWord;
 
 public class PredictivePrototype {
 
