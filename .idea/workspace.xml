@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ce270f-aef2-4794-af2e-c6e2eea5506b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/words" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dictionary" afterPath="$PROJECT_DIR$/dictionary" />
       <change beforePath="$PROJECT_DIR$/ignore.gitignore" afterPath="$PROJECT_DIR$/ignore.gitignore" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/DictionaryModel.java" afterPath="$PROJECT_DIR$/src/predictive/DictionaryModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/DictionaryModelInterface.java" afterPath="$PROJECT_DIR$/src/predictive/DictionaryModelInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/KeypadListener.java" afterPath="$PROJECT_DIR$/src/predictive/KeypadListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/KeypadPane.java" afterPath="$PROJECT_DIR$/src/predictive/KeypadPane.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/ListDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/ListDictionary.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/MapDictionaryTest.java" afterPath="$PROJECT_DIR$/src/predictive/MapDictionaryTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/MessagePane.java" afterPath="$PROJECT_DIR$/src/predictive/MessagePane.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/PredictivePrototypeTest.java" afterPath="$PROJECT_DIR$/src/predictive/PredictivePrototypeTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordTree.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java" afterPath="$PROJECT_DIR$/src/predictive/Sigs2WordsProto.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/TreeDictionary.java" afterPath="$PROJECT_DIR$/src/predictive/TreeDictionary.java" />
-      <change beforePath="$PROJECT_DIR$/src/predictive/View.java" afterPath="$PROJECT_DIR$/src/predictive/View.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +77,8 @@
       <file leaf-file-name="ignore.gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ignore.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -273,17 +261,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="predictive" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/predictive" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/out/production/WS23/predictive" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/predictive" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/out/production/WS23/predictive" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -538,7 +526,7 @@
       <workItem from="1518535932345" duration="65000" />
       <workItem from="1518536292239" duration="12000" />
       <workItem from="1518549094077" duration="6009000" />
-      <workItem from="1518623807242" duration="518000" />
+      <workItem from="1518623807242" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1517578669354</created>
@@ -583,7 +571,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82087000" />
+    <option name="totallyTimeSpent" value="82212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1079,8 +1067,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ignore.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
