@@ -37,7 +37,8 @@ public class PredictivePrototypeTest {
     public void test2() {
 
         String expected = "43556 96753";
-        String actual = wordToSignature("hello world");;
+        String actual = wordToSignature("hello world");
+        ;
 
         assertEquals(expected, actual);
     }

@@ -50,6 +50,53 @@ public class TreeDictionary implements Dictionary {
     }
 
     /**
+     * Finds the particular signature in the tree
+     *
+     * @param position  the position to look at in the word
+     * @param tree      the tree to look in
+     * @param signature the signature to look for
+     * @return list of all the matches dependant on the signature entered from the tree
+     */
+    public static List<String> findInTree(int position, TreeNode tree, String signature) {
+
+        if (position == signature.length()) {
+            return tree.getWords();
+        }
+
+        int index = Character.getNumericValue(signature.charAt(position));
+
+        if (tree.getChildren()[index] != null) {
+            return findInTree(position + 1, tree.getChildren()[index], signature);
+        } else {
+            return tree.getWords();
+        }
+
+    }
+
+    /**
+     * Converts a signature string to a string of proper indexes
+     *
+     * @param s signature to convert
+     * @return the signature as an index
+     */
+    public static String convertToIndex(String s) {
+
+        StringBuffer toReturn = new StringBuffer();
+
+        for (int i = 0; i < s.toCharArray().length; i++) {
+
+            char toConvert = s.charAt(i);
+            if (Character.getNumericValue(toConvert) >= 2) {
+                int toAdd = Character.getNumericValue(toConvert) - 2;
+                toReturn.append(toAdd);
+
+            }
+        }
+        return toReturn.toString();
+
+    }
+
+    /**
      * Method to add a node to a tree
      *
      * @param word     word to add
@@ -98,7 +145,6 @@ public class TreeDictionary implements Dictionary {
     public Set<String> signatureToWords(String signature) {
 
 
-
         List<String> list = new ArrayList();
         StringBuffer signatureToProcess = new StringBuffer();
 
@@ -125,53 +171,6 @@ public class TreeDictionary implements Dictionary {
         list = trimList(list, sigLength);
 
         return new HashSet<>(list);
-
-    }
-
-    /**
-     * Finds the particular signature in the tree
-     *
-     * @param position  the position to look at in the word
-     * @param tree      the tree to look in
-     * @param signature the signature to look for
-     * @return list of all the matches dependant on the signature entered from the tree
-     */
-    public static List<String> findInTree(int position, TreeNode tree, String signature) {
-
-        if (position == signature.length()) {
-            return tree.getWords();
-        }
-
-        int index = Character.getNumericValue(signature.charAt(position));
-
-        if (tree.getChildren()[index] != null) {
-            return findInTree(position + 1, tree.getChildren()[index], signature);
-        } else {
-            return tree.getWords();
-        }
-
-    }
-
-    /**
-     * Converts a signature string to a string of proper indexes
-     *
-     * @param s signature to convert
-     * @return the signature as an index
-     */
-    public static String convertToIndex(String s) {
-
-        StringBuffer toReturn = new StringBuffer();
-
-        for (int i = 0; i < s.toCharArray().length; i++) {
-
-            char toConvert = s.charAt(i);
-            if (Character.getNumericValue(toConvert) >= 2) {
-                int toAdd = Character.getNumericValue(toConvert) - 2;
-                toReturn.append(toAdd);
-
-            }
-        }
-        return toReturn.toString();
 
     }
 

@@ -1,16 +1,47 @@
 package predictive;
 
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
 
-public class Model extends Observable {
-    @Override
-    public void addListener(InvalidationListener listener) {
+import java.util.List;
+
+public class DictionaryModel implements DictionaryModelInterface {
+
+    TreeDictionary dictionary;
+
+
+    public DictionaryModel(String dictionaryFile) {
+
+        this.dictionary = new TreeDictionary(dictionaryFile);
+
+    }
+
+    public DictionaryModel() {
+
+        this.dictionary = new TreeDictionary("dictionary");
 
     }
 
     @Override
-    public void removeListener(InvalidationListener listener) {
+    public List<String> getMessage() {
+        return null;
+    }
+
+    @Override
+    public void addCharacter(char key) {
+
+    }
+
+    @Override
+    public void removeLastCharacter() {
+
+    }
+
+    @Override
+    public void nextMatch() {
+
+    }
+
+    @Override
+    public void acceptWord() {
 
     }
 }

@@ -133,7 +133,7 @@ public class ListDictionary implements Dictionary {
      * Adds to a number set a particular set of values starting at a specified index and working around that index.
      * Assumes the list is sorted
      *
-     * @param index the index to start at
+     * @param index     the index to start at
      * @param signature the signature to match
      * @return a set with the correct values present
      */
@@ -159,7 +159,6 @@ public class ListDictionary implements Dictionary {
 
         return potentialWords;
     }
-
 
 
 }

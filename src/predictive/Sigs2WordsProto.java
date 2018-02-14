@@ -7,6 +7,7 @@
 
 
 package predictive;
+
 import static predictive.PredictivePrototype.signatureToWords;
 
 public class Sigs2WordsProto {
