@@ -17,7 +17,7 @@ public class View {
         //Here we create 2 Views with the same
         //model passed as an argument, to visualise
         //the effect of the Observer pattern.
-        // That is, when a change happens to one view, the other
+        //That is, when a change happens to one view, the other
         //is being updated accordingly.
 
         DictionaryModel model = new DictionaryModel();

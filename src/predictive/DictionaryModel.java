@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
-import static predictive.HelperMethods.wordToSignature;
-
 public class DictionaryModel extends Observable implements DictionaryModelInterface {
 
     private TreeDictionary dictionary;
@@ -44,16 +42,22 @@ public class DictionaryModel extends Observable implements DictionaryModelInterf
         matches.clear();
         matches.addAll(dictionary.signatureToWords(signature.toString()));
         matches.sort(String::compareTo);
-        System.out.println(matches);
+        signature.trimToSize();
         indexCounter = 0;
     }
 
     @Override
     public void removeLastCharacter() {
-        signature.delete(signature.length() - 1, signature.length() - 1);
+
+        if (signature.length() == 0) {
+            return;
+        }
+
+        signature.setLength(signature.length() - 1);
         matches.clear();
         matches.addAll(dictionary.signatureToWords(signature.toString()));
         matches.sort(String::compareTo);
+        signature.trimToSize();
         indexCounter = 0;
     }
 
@@ -64,7 +68,7 @@ public class DictionaryModel extends Observable implements DictionaryModelInterf
         if (indexCounter == (matches.size() - 1)) {
             indexCounter = 0;
         } else {
-            indexCounter =+ 1;
+            indexCounter = +1;
         }
     }
 
