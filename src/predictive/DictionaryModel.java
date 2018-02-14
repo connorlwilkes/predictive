@@ -9,7 +9,7 @@ import static predictive.HelperMethods.wordToSignature;
 public class DictionaryModel extends Observable implements DictionaryModelInterface {
 
     private TreeDictionary dictionary;
-    private StringBuilder word;
+    private StringBuilder signature;
     private List<String> message;
     private List<String> matches;
     private String currentMatch;
@@ -27,7 +27,7 @@ public class DictionaryModel extends Observable implements DictionaryModelInterf
     }
 
     public void setUp() {
-        word = new StringBuilder();
+        signature = new StringBuilder();
         message = new ArrayList<>();
         matches = new ArrayList<>();
         indexCounter = 0;
@@ -40,16 +40,19 @@ public class DictionaryModel extends Observable implements DictionaryModelInterf
 
     @Override
     public void addCharacter(char key) {
-        word.append(key);
-        matches.addAll(dictionary.signatureToWords(wordToSignature(word.toString())));
+        signature.append(key);
+        matches.clear();
+        matches.addAll(dictionary.signatureToWords(signature.toString()));
         matches.sort(String::compareTo);
+        System.out.println(matches);
         indexCounter = 0;
     }
 
     @Override
     public void removeLastCharacter() {
-        word.delete(word.length() - 1, word.length() - 1);
-        matches.addAll(dictionary.signatureToWords(wordToSignature(word.toString())));
+        signature.delete(signature.length() - 1, signature.length() - 1);
+        matches.clear();
+        matches.addAll(dictionary.signatureToWords(signature.toString()));
         matches.sort(String::compareTo);
         indexCounter = 0;
     }
@@ -67,6 +70,7 @@ public class DictionaryModel extends Observable implements DictionaryModelInterf
 
     @Override
     public void acceptWord() {
-        message.add(word.toString());
+        message.add(signature.toString());
+        System.out.println(message);
     }
 }
